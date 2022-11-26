@@ -104,6 +104,7 @@
             app:ccp_textSize="20sp" />
 
         <EditText
+            android:id="@+id/phoneNumber"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp"
@@ -115,6 +116,7 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="12dp"
@@ -126,6 +128,7 @@
 
 
     <Button
+        android:id="@+id/send"
         style="@style/Widget.Material3.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
