@@ -6,6 +6,7 @@
     <color name="teal_200">#307585</color>
     <color name="teal_700">#307585</color>
     <color name="primary">#307585</color>
+    <color name="primaryTrans">#A4307585</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#F1F2F4</color>

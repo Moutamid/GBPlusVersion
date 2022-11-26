@@ -14,6 +14,12 @@
         android:theme="@style/Theme.GBPlusVersion"
         tools:targetApi="31">
         <activity
+            android:name=".CaptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaptionsListActivity"
+            android:exported="false" />
+        <activity
             android:name=".TextRepeaterActivity"
             android:exported="false" />
         <activity

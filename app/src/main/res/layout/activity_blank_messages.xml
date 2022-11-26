@@ -8,6 +8,7 @@
     tools:context=".BlankMessagesActivity">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/backbtn"
         android:layout_width="40dp"
         android:layout_height="40dp"
         app:cardBackgroundColor="@color/primary"

@@ -4,11 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.moutamid.gbplusversion.databinding.ActivityTextRepeaterBinding;
+
 public class TextRepeaterActivity extends AppCompatActivity {
+
+    ActivityTextRepeaterBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_text_repeater);
+        binding = ActivityTextRepeaterBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        binding.backbtn.setOnClickListener(v -> {
+            onBackPressed();
+            finish();
+        });
     }
 }

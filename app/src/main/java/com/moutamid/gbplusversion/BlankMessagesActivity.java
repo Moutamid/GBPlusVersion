@@ -13,5 +13,11 @@ public class BlankMessagesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityBlankMessagesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        binding.backbtn.setOnClickListener(v -> {
+            onBackPressed();
+            finish();
+        });
+
     }
 }

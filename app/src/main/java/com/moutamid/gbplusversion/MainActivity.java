@@ -27,5 +27,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, TextRepeaterActivity.class));
         });
 
+        binding.closedCaption.setOnClickListener(v -> {
+            startActivity(new Intent(this, CaptionsListActivity.class));
+        });
     }
 }
