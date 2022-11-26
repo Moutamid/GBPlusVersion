@@ -2132,6 +2132,8 @@
         <item>“Hands in the air like we don’t care.” - Miley Cyrus, We Can’t Stop</item>
         <item>“I’ma keep running because a winner don’t quit on themselves.” - Beyonce, Freedom</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

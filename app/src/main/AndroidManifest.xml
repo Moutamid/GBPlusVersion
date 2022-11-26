@@ -22,6 +22,9 @@
         android:theme="@style/Theme.GBPlusVersion"
         tools:targetApi="31">
         <activity
+            android:name=".EmotionsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.TextMagicActivity"
             android:exported="false" />
         <activity
