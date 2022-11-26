@@ -1,4 +1,4 @@
-package com.moutamid.gbplusversion;
+package com.moutamid.gbplusversion.activities;
 
 import static android.content.ContentValues.TAG;
 

@@ -1,4 +1,4 @@
-package com.moutamid.gbplusversion;
+package com.moutamid.gbplusversion.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.moutamid.gbplusversion.R;
 import com.moutamid.gbplusversion.adapters.CaptionAdapter;
 import com.moutamid.gbplusversion.databinding.ActivityCaptionsBinding;
 

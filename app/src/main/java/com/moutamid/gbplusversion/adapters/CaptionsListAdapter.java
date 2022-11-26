@@ -5,14 +5,12 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.moutamid.gbplusversion.CaptionsActivity;
-import com.moutamid.gbplusversion.CaptionsListActivity;
+import com.moutamid.gbplusversion.activities.CaptionsActivity;
 import com.moutamid.gbplusversion.R;
 
 public class CaptionsListAdapter extends RecyclerView.Adapter<CaptionsListAdapter.CaptionsListVH> {

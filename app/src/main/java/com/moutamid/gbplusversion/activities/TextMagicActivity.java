@@ -1,4 +1,4 @@
-package com.moutamid.gbplusversion;
+package com.moutamid.gbplusversion.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;

@@ -22,25 +22,25 @@
         android:theme="@style/Theme.GBPlusVersion"
         tools:targetApi="31">
         <activity
-            android:name=".TextMagicActivity"
+            android:name=".activities.TextMagicActivity"
             android:exported="false" />
         <activity
-            android:name=".CaptionsActivity"
+            android:name=".activities.CaptionsActivity"
             android:exported="false" />
         <activity
-            android:name=".CaptionsListActivity"
+            android:name=".activities.CaptionsListActivity"
             android:exported="false" />
         <activity
-            android:name=".TextRepeaterActivity"
+            android:name=".activities.TextRepeaterActivity"
             android:exported="false" />
         <activity
-            android:name=".BlankMessagesActivity"
+            android:name=".activities.BlankMessagesActivity"
             android:exported="false" />
         <activity
-            android:name=".DirectChatActivity"
+            android:name=".activities.DirectChatActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".activities.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,7 +49,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="false" />
     </application>
 
