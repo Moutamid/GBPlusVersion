@@ -30,5 +30,10 @@ public class MainActivity extends AppCompatActivity {
         binding.closedCaption.setOnClickListener(v -> {
             startActivity(new Intent(this, CaptionsListActivity.class));
         });
+
+        binding.magic.setOnClickListener(v -> {
+            startActivity(new Intent(this, TextMagicActivity.class));
+        });
+
     }
 }
