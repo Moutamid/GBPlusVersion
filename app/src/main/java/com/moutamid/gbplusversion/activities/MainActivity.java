@@ -3,11 +3,13 @@ package com.moutamid.gbplusversion.activities;
 import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.View;
 import android.widget.LinearLayout;
 
 import com.facebook.ads.Ad;
@@ -18,6 +20,7 @@ import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.InterstitialAd;
 import com.facebook.ads.InterstitialAdListener;
 import com.moutamid.gbplusversion.R;
+import com.moutamid.gbplusversion.Utils;
 import com.moutamid.gbplusversion.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -111,6 +114,59 @@ public class MainActivity extends AppCompatActivity {
 
         binding.happy.setOnClickListener(v -> {
             startActivity(new Intent(this, TextEmojiActivity.class));
+        });
+
+        binding.WaBusiness.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Utils.hasPermissions(MainActivity.this, Utils.permissions)) {
+                    ActivityCompat.requestPermissions(MainActivity.this, Utils.permissions, Utils.perRequest);
+                } else {
+                    Intent i = new Intent(MainActivity.this, StatusActivity.class);
+                    i.putExtra("type", "WABS");
+                    startActivity(i);
+
+                }
+            }
+        });
+
+        binding.WAGB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Utils.hasPermissions(MainActivity.this, Utils.permissions)) {
+                    ActivityCompat.requestPermissions(MainActivity.this, Utils.permissions, Utils.perRequest);
+                } else {
+                    Intent i = new Intent(MainActivity.this, StatusActivity.class);
+                    i.putExtra("type", "WAGB");
+                    startActivity(i);
+                }
+            }
+        });
+
+        binding.WA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Utils.hasPermissions(MainActivity.this, Utils.permissions)) {
+                    ActivityCompat.requestPermissions(MainActivity.this, Utils.permissions, Utils.perRequest);
+                } else {
+                    Intent i = new Intent(MainActivity.this, StatusActivity.class);
+                    i.putExtra("type", "WA");
+                    startActivity(i);
+                }
+            }
+        });
+
+        binding.saved.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Utils.hasPermissions(MainActivity.this, Utils.permissions)) {
+                    ActivityCompat.requestPermissions(MainActivity.this, Utils.permissions, Utils.perRequest);
+                } else {
+                    Intent i = new Intent(MainActivity.this, MyStatusActivity.class);
+                    startActivity(i);
+                }
+
+            }
         });
 
     }

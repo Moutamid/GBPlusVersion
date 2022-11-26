@@ -132,18 +132,20 @@ public class BlankMessagesActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                int j = Integer.parseInt(s.toString());
-                if (binding.newLineSwitch.isChecked()){
-                    for (int i=0; i<j; i++){
-                        space = space + "\u3164" + "\n";
+                if (!s.toString().isEmpty()){
+                    int j = Integer.parseInt(s.toString());
+                    if (binding.newLineSwitch.isChecked()){
+                        for (int i=0; i<j; i++){
+                            space = space + "\u3164" + "\n";
+                        }
+                    } else {
+                        for (int i =0; i<j; i++){
+                            space = space + "\u3164";
+                        }
                     }
-                } else {
-                    for (int i =0; i<j; i++){
-                        space = space + "\u3164";
-                    }
+                    binding.blankText.setVisibility(View.VISIBLE);
+                    binding.blankText.setText(space);
                 }
-                binding.blankText.setVisibility(View.VISIBLE);
-                binding.blankText.setText(space);
             }
 
             @Override
