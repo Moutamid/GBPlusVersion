@@ -11,20 +11,16 @@ import android.content.res.Resources;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Environment;
-import android.os.FileUtils;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 
 import androidx.core.content.ContextCompat;
-
-import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.net.URLConnection;
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 
 public class Utils {
     public static String mPath;
@@ -121,10 +117,10 @@ public class Utils {
     static boolean copyFileInSavedDir(Context context, String file) {
         try {
             if (isImageFile(file)) {
-                FileUtils.copyFileToDirectory(new File(file), getDir(context,"Images"));
+                org.apache.commons.io.FileUtils.copyFileToDirectory(new File(file), getDir(context,"Images"));
                 mediaScanner(context, getDir(context,"Images") + "/", file, "image/*");
             } else {
-                FileUtils.copyFileToDirectory(new File(file), getDir(context,"Videos"));
+                org.apache.commons.io.FileUtils.copyFileToDirectory(new File(file), getDir(context,"Videos"));
                 mediaScanner(context, getDir(context,"Videos") + "/", file, "video/*");
             }
             return true;

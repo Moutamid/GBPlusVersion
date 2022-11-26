@@ -2,11 +2,6 @@ package com.moutamid.gbplusversion.activities;
 
 import static android.content.ContentValues.TAG;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.FileProvider;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -16,6 +11,11 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
+import androidx.viewpager.widget.ViewPager;
 
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
@@ -98,6 +98,10 @@ public class PreviewActivity extends AppCompatActivity {
         position = getIntent().getIntExtra("position", 0);
         statusDownload = getIntent().getBooleanExtra("statusdownload", false);
 
+        binding.backbtn.setOnClickListener(v -> {
+            onBackPressed();
+            finish();
+        });
 
         previewAdapter = new PreviewAdapter(PreviewActivity.this, imageList);
         binding.viewPager.setAdapter(previewAdapter);
@@ -273,28 +277,6 @@ public class PreviewActivity extends AppCompatActivity {
                         alertDialog.show();
                     } else {
                         finish();
-                    }
-                    break;
-
-                case R.id.repostIV:
-                    if (isImageFile(imageList.get(binding.viewPager.getCurrentItem()).getFilePath())) {
-                        Intent share = new Intent(Intent.ACTION_SEND);
-                        share.setType("image/*");
-                        share.setPackage("com.whatsapp");
-                        File imageFileToShare = new File(imageList.get(binding.viewPager.getCurrentItem()).getFilePath());
-                        Uri photoURI = FileProvider.getUriForFile(getApplicationContext(), getApplicationContext()
-                                .getPackageName() + ".provider", imageFileToShare);
-                        share.putExtra(Intent.EXTRA_STREAM, photoURI);
-                        startActivity(Intent.createChooser(share, "Share Image!"));
-                    } else if (isVideoFile(imageList.get(binding.viewPager.getCurrentItem()).getFilePath())) {
-                        Uri videoURI = FileProvider.getUriForFile(getApplicationContext(), getApplicationContext()
-                                .getPackageName() + ".provider", new File(imageList.get(binding.viewPager.getCurrentItem()).getFilePath()));
-                        Intent videoshare = new Intent(Intent.ACTION_SEND);
-                        videoshare.setType("*/*");
-                        videoshare.setPackage("com.whatsapp");
-                        videoshare.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                        videoshare.putExtra(Intent.EXTRA_STREAM, videoURI);
-                        startActivity(videoshare);
                     }
                     break;
 
