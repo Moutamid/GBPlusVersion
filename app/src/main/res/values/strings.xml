@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">GBPlusVersion</string>
 
+    <string name="fb_ad_inters" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="fb_ad_banner" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+
     <string-array name="s_best">
         <item>Be who you are and say what you feel, because those who mind don’t matter and those who matter don’t mind.</item>
         <item>There is never a time or place for true love. It happens accidentally, in a heartbeat, in a single flashing, throbbing moment.</item>
@@ -2134,6 +2137,7 @@
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 
 </resources>

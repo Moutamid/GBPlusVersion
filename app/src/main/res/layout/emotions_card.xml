@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/emoj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/shareBtn"
+                android:gravity="center"
+                android:text="sdvjv"
+                android:textColor="@color/primary"
+                android:textSize="18sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/shareBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_toLeftOf="@id/copyBtn"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/share"
+                    app:tint="@color/white" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/copyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/copy"
+                    app:tint="@color/white" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

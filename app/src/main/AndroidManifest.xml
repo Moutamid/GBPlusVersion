@@ -22,7 +22,10 @@
         android:theme="@style/Theme.GBPlusVersion"
         tools:targetApi="31">
         <activity
-            android:name=".EmotionsActivity"
+            android:name=".activities.TextEmojiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EmotionsActivity"
             android:exported="false" />
         <activity
             android:name=".activities.TextMagicActivity"
