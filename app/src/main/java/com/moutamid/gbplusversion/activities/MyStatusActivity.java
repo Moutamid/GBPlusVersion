@@ -2,16 +2,16 @@ package com.moutamid.gbplusversion.activities;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+import android.widget.LinearLayout;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
-import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
-import android.widget.LinearLayout;
 
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
@@ -47,6 +47,11 @@ public class MyStatusActivity extends AppCompatActivity {
         adContainer.addView(faceBookBanner);
 
         faceBookBanner.loadAd();
+
+        binding.backbtn.setOnClickListener(v -> {
+            onBackPressed();
+            finish();
+        });
 
         finterstitialAd = new InterstitialAd(this, getResources().getString(R.string.fb_ad_inters));
         InterstitialAdListener interstitialAdListener = new InterstitialAdListener() {
