@@ -38,7 +38,7 @@
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
                         android:padding="8dp"
-                        android:text="GB Plus Version"
+                        android:text="GB Tools Plus Version"
                         android:textColor="@color/primary"
                         android:textSize="20sp"
                         android:textStyle="bold" />

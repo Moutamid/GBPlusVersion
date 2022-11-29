@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.moutamid.gbplusversion" >
+    package="com.moutamid.gb" >
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -22,43 +22,43 @@
         android:theme="@style/Theme.GBPlusVersion"
         tools:targetApi="31" >
         <activity
-            android:name=".activities.StatusActivity"
+            android:name="com.moutamid.gb.activities.StattusActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.VideoPlayerActivity"
+            android:name="com.moutamid.gb.activities.VideopPlayerActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.PreviewActivity"
+            android:name="com.moutamid.gb.activities.PreviiewActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MyStatusActivity"
+            android:name="com.moutamid.gb.activities.MyyStatusActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.TextEmojiActivity"
+            android:name="com.moutamid.gb.activities.TexttEmojiActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.EmotionsActivity"
+            android:name="com.moutamid.gb.activities.EmmotionsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.TextMagicActivity"
+            android:name="com.moutamid.gb.activities.TextmMagicActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.CaptionsActivity"
+            android:name="com.moutamid.gb.activities.CapptionsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.CaptionsListActivity"
+            android:name="com.moutamid.gb.activities.CcaptionsListActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.TextRepeaterActivity"
+            android:name="com.moutamid.gb.activities.TextrRepeaterActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.BlankMessagesActivity"
+            android:name="com.moutamid.gb.activities.BlankMesssagesActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.DirectChatActivity"
+            android:name="com.moutamid.gb.activities.DireectChatActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.SplashScreenActivity"
+            android:name="com.moutamid.gb.activities.SpllashScreenActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,7 +67,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.moutamid.gb.activities.MainActivity"
             android:exported="false" />
     </application>
 

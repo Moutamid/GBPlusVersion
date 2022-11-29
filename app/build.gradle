@@ -6,12 +6,12 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.moutamid.gbplusversion"
+        applicationId "com.moutamid.gb"
         minSdk 21
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
-        setProperty("archivesBaseName", "GBPlusVersion-$versionName")
+        versionCode 4
+        versionName "1.4"
+        setProperty("archivesBaseName", "GB Tools Plus Version-$versionName")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
