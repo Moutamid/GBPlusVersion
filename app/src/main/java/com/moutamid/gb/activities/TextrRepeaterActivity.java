@@ -132,6 +132,7 @@ public class TextrRepeaterActivity extends AppCompatActivity {
             } catch (ActivityNotFoundException e) {
                 Toast.makeText(TextrRepeaterActivity.this, "Some problems", Toast.LENGTH_SHORT).show();
             }
+
         });
 
         binding.deleteBtn.setOnClickListener(v -> {
