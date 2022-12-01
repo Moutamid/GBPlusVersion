@@ -24,7 +24,10 @@ public class AngryEmotFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_angry_emot, container, false);
         RecyclerView list = view.findViewById(R.id.list);
+
+
         list.setLayoutManager(new GridLayoutManager(getActivity(), 1));
+
         list.setHasFixedSize(true);
         AngryAdapter adapter = new AngryAdapter(this.angryAscii, view.getContext());
         list.setAdapter(adapter);

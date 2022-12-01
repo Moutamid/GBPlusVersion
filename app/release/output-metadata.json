@@ -4,16 +4,16 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.moutamid.gbplusversion",
+  "applicationId": "com.moutamid.gb",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 1,
-      "versionName": "1.0",
-      "outputFile": "GBPlusVersion-1.0-release.apk"
+      "versionCode": 6,
+      "versionName": "1.6",
+      "outputFile": "GB Tools Plus Version-1.6-release.apk"
     }
   ],
   "elementType": "File"

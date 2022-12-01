@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">GB Tools Plus Version</string>
 
-    <string name="fb_ad_inters" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="fb_ad_inters" translatable="false">544602544195015_544618424193427</string>
+    <string name="fb_ad_banner" translatable="false">544602544195015_544618074193462</string>
+
+    <!--<string name="fb_ad_inters" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
     <string name="fb_ad_banner" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
 
+    -->
     <string name="delete_error">Couldn\'t delete some files</string>
     <string name="delete_success">Deleted successfully</string>
     <string name="save_error">Couldn\'t save some files</string>

@@ -53,6 +53,7 @@ public class TextrRepeaterActivity extends AppCompatActivity {
             public void onError(Ad ad, AdError adError) {
                 // Ad error callback
                 Log.e(TAG, "Interstitial ad failed to load: " + adError.getErrorMessage());
+                Log.e(TAG, "Interstitial ad failed to load: " + adError.getErrorCode());
             }
 
             @Override
